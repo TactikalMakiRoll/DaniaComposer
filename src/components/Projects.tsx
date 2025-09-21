@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import farlanders from "../assets/farlanders.png";
 import leoniDiSicilia from "../assets/I Leoni di Sicilia.jpg";
