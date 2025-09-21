@@ -25,13 +25,6 @@ const responsive = {
 };
 
 const Projects: React.FC = () => {
-  // Logic for carousel will go here
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setCurrentIndex(Number(event.target.value));
-  };
-
   return (
     <section className="block projects-block container">
       <h2>Projects</h2>
