@@ -1,11 +1,10 @@
 import React from "react";
-import photoUrl from "../assets/main_photo.jpg";
+import photoUrl from "../assets/main_photo1.jpg";
 
 const Description: React.FC = () => {
   return (
     <section className="block description-block container">
       <div className="description-image">
-        {/* Placeholder for image */}
         <img src={photoUrl} alt="Composer" />
       </div>
       <div className="description-text">

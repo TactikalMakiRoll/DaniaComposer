@@ -31,13 +31,15 @@ body {
   color: #333;
 }
 .logo-main {
-  font-size: 24px;
+  font-size: 1.75em;
   font-weight: bold;
   margin: 0;
 }
 .logo-sub {
-  font-size: 14px;
-  margin: 0;
+  font-size: 1.25em;
+  margin: 0 auto;
+  border-top: 1px solid #ccc;
+  border-color: #ccc;
 }
 
 /* Navbar */
@@ -63,24 +65,49 @@ body {
 
 /* Generic Block Styling */
 .block {
-  padding: 60px 20px;
+  /* padding: 60px 20px;
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd; */
 }
 
 /* Hero Block */
 .hero {
-  position: relative;
-  height: 300px;
+  /* position: relative; */
+  /* height: 300px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #ddd;
+  justify-content: center; */
+  /* background-color: #ddd;
   background-image: url("../src/assets/cranes.jpg");
   background-size: cover;
-  background-position: center;
-  z-index: 1; /* Make sure the content is on top */
+  background-position: center; */
+  z-index: 1;
+  height: 500px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 2px black;
 }
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.hero-parallax-image {
+  background-image: url("../src/assets/cranes.jpg");
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: 60% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .hero::before {
   /* Create the pseudo-element */
   content: ""; /* The pseudo-element must have content */
@@ -94,11 +121,13 @@ body {
   background-color: rgba(0, 0, 0, 0.2); /* This is your darkening layer */
 
   /* The z-index must be lower than the content's z-index */
-  z-index: -1;
+  /* z-index: -1; */
 }
+
 .hero h1 {
   font-size: 2.5rem;
 }
+
 .social-links {
   position: absolute;
   bottom: 20px;
@@ -110,11 +139,26 @@ body {
   font-size: 24px; /* Adjust if using an icon font */
 }
 
+.social-links > a > img {
+  height: 2rem;
+}
+.social-links > a > img:hover {
+  /* A common way to change color on an SVG image is to use a filter. */
+  /* This example creates a blue-like effect. You can generate filters for other colors online. */
+  filter: invert(27%) sepia(99%) saturate(2323%) hue-rotate(225deg)
+    brightness(102%) contrast(101%);
+}
+
+/* #youtube-icon {
+  height: 40px;
+} */
+
 /* Description Block */
 .description-block {
   display: flex;
   gap: 40px;
   align-items: center;
+  font-size: 1.2rem;
 }
 .description-image {
   flex: 1;
@@ -124,6 +168,11 @@ body {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  transition: transform 0.5s ease-in-out;
+  transform: rotateY(0deg);
+}
+.description-image:hover img {
+  transform: rotateY(180deg);
 }
 .description-text {
   flex: 1;
@@ -160,6 +209,31 @@ body {
 
 .skill .icon img {
   height: 50px; /* Set a fixed height for the icon */
+}
+
+/* Projects */
+.carousel-container {
+  /* height: 200px; */
+  /* column-gap: 2em; */
+  /* overflow: visible; */
+}
+
+.carousel-item {
+  /* padding-right: 10px; */
+  padding-right: 5px;
+}
+.carousel-item :last-child {
+  /* padding-right: 10px; */
+  padding-right: 5px;
+}
+
+.carousel-image {
+  width: calc(100% - 10px);
+  /* height: 100%; */
+}
+
+.carousel-dots {
+  margin-top: 10px;
 }
 
 /* ShowReel Block */

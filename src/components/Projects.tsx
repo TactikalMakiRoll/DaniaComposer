@@ -1,22 +1,82 @@
-import React from "react";
+import React, { useState } from "react";
+
+import farlanders from "../assets/farlanders.png";
+import leoniDiSicilia from "../assets/I Leoni di Sicilia.jpg";
+import superLocoWorld from "../assets/super loco world.png";
+import hollowHome from "../assets/hollow home.png";
+
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+};
 
 const Projects: React.FC = () => {
   // Logic for carousel will go here
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setCurrentIndex(Number(event.target.value));
+  };
+
   return (
     <section className="block projects-block container">
       <h2>Projects</h2>
-      <div className="carousel">
-        {/* Carousel items */}
-        <div className="carousel-item">
-          <img src="https://via.placeholder.com/300x200" alt="Project 1" />
-          <div className="overlay">
-            <p>Project 1 Description</p>
-            <a href="#">Link</a>
-          </div>
+      <Carousel
+        swipeable={false}
+        draggable={false}
+        showDots={true}
+        responsive={responsive}
+        infinite={false}
+        customTransition="transform 300ms ease-in-out"
+        transitionDuration={500}
+        containerClass="carousel-container"
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        dotListClass="carousel-dots"
+        itemClass="carousel-item"
+      >
+        <div>
+          <img
+            className="carousel-image"
+            src={farlanders}
+            alt="Farlanders project"
+          />
         </div>
-        {/* Add more items */}
-      </div>
-      <p>A carousel of projects will be implemented here.</p>
+        <div>
+          <img
+            className="carousel-image"
+            src={leoniDiSicilia}
+            alt="I Leoni di Sicilia project"
+          />
+        </div>
+        <div>
+          <img
+            className="carousel-image"
+            src={superLocoWorld}
+            alt="Super Loco World project"
+          />
+        </div>
+        <div>
+          <img
+            className="carousel-image"
+            src={hollowHome}
+            alt="Hollow Home project"
+          />
+        </div>
+      </Carousel>
     </section>
   );
 };
