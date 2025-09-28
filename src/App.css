@@ -169,21 +169,30 @@ body {
   gap: 40px;
   align-items: center;
   font-size: 1.2rem;
+  padding-bottom: 0;
 }
 .description-image {
   flex: 1;
   max-width: 50%;
 }
 .description-image img {
-  width: 100%;
-  height: auto;
+  display: block;
+  margin: 0 auto;
+  height: 750px;
   border-radius: 8px;
   transition: transform 0.5s ease-in-out;
   transform: rotateY(0deg);
 }
-.description-image:hover img {
-  transform: rotateY(180deg);
+
+@media screen and (max-width: 1600px) {
+  .description-image img {
+    height: 450px;
+  }
 }
+
+/* .description-image:hover img {
+  transform: rotateY(180deg);
+} */
 .description-text {
   flex: 1;
   text-align: left;
@@ -198,11 +207,13 @@ body {
   font-size: 1.25rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .skills-block-wrapper h2 {
   text-align: center;
   font-size: 2rem;
+  margin-top: 0;
 }
 
 .skill {
@@ -264,27 +275,41 @@ body {
 
 /* Projects */
 .carousel-container {
+  max-width: 1980px;
+  margin: 0 auto;
   /* height: 200px; */
   /* column-gap: 2em; */
   /* overflow: visible; */
+  height: 600px;
 }
 
 .carousel-item {
   /* padding-right: 10px; */
-  padding-right: 5px;
+  /* padding-right: 5px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .carousel-item :last-child {
   /* padding-right: 10px; */
-  padding-right: 5px;
+  /* padding-right: 5px; */
 }
 
 .carousel-image {
-  width: calc(100% - 10px);
-  /* height: 100%; */
+  max-width: calc(100% - 1rem);
+  max-height: calc(100% - 1rem);
+  /* width: 90%; */
+  height: auto;
+  object-fit: cover;
 }
 
 .carousel-dots {
   margin-top: 10px;
+}
+
+.show-reel-block {
+  border-top: 1px solid #ccc;
+  /* padding-top: 0; */
 }
 
 /* ShowReel Block */
@@ -298,6 +323,7 @@ body {
 .show-reel-block h2 {
   text-align: center;
   font-size: 2rem;
+  margin-top: 0px;
 }
 
 /* Get In Touch */

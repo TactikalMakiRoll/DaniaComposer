@@ -11,16 +11,20 @@ const Description: React.FC = () => {
         <h2>About Me</h2>
         <p>
           Danylo Dunets (a.k.a. I-Human) is a Ukrainian composer from Mariupol
-          who specializes in music for films, video games, and other media. I’m
-          equally passionate about creating music in a wide range of genres —
-          from dramatic orchestral scores to dark electronic soundscapes, always
-          focused on crafting atmospheric and emotional compositions and
-          memorable musical themes. I collaborate closely with directors and
-          designers to transform their ideas and feedback into music that
-          supports the game’s vision. I love music in all its forms — listening
-          to it, exploring it, creating it. For me, it’s neither a profession
-          nor a hobby, but a way of living and seeing the world — an essential
-          part of who I am.
+          who specializes in music for films, video games, and other media.
+        </p>
+        <p>
+          I’m equally passionate about creating music in a wide range of genres
+          — from dramatic orchestral scores to dark electronic soundscapes,
+          always focused on crafting atmospheric and emotional compositions and
+          memorable musical themes. <br></br>I collaborate closely with
+          directors and designers to transform their ideas and feedback into
+          music that supports the game’s vision.
+        </p>
+        <p>
+          I love music in all its forms — listening to it, exploring it,
+          creating it. For me, it’s neither a profession nor a hobby, but a way
+          of living and seeing the world — an essential part of who I am.
         </p>
       </div>
     </section>

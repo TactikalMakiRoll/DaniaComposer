@@ -10,7 +10,7 @@ import "react-multi-carousel/lib/styles.css";
 
 const responsive = {
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 2560, min: 1024 },
     items: 3,
   },
   tablet: {
@@ -34,6 +34,7 @@ const Projects: React.FC = () => {
         showDots={true}
         responsive={responsive}
         infinite={false}
+        autoPlay={false}
         customTransition="transform 300ms ease-in-out"
         transitionDuration={500}
         containerClass="carousel-container"

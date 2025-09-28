@@ -7,7 +7,7 @@ const ShowReel: React.FC = () => {
       {/* In a real project, you'd import the video file */}
       <video controls className="show-reel-video">
         <source src="path/to/your/video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+        Your browser does not suppo rt the video tag.
       </video>
     </section>
   );
