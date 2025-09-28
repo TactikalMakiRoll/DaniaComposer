@@ -15,6 +15,16 @@ body {
   padding: 20px;
 }
 
+/* For screens between 1200px and 2560px, make container full-width */
+@media (min-width: 1200px) and (max-width: 2560px) {
+  .container {
+    max-width: 100%;
+    /* Adjust padding for edge-to-edge feel */
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 /* Header */
 .header {
   display: flex;
@@ -182,14 +192,55 @@ body {
 /* Skills Block */
 .skills-block {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 20px;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
+
+.skills-block-wrapper h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
 .skill {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
   border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 150px;
+  padding: 2rem 0.5rem;
 }
+
+@media (min-width: 768px) {
+  .skill {
+    padding: 4rem 1rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .skill {
+    padding: 6rem 1rem;
+  }
+  .skills-block {
+    gap: 3rem;
+  }
+}
+@media (min-width: 1920px) {
+  .skill {
+    padding: 8rem 1rem;
+  }
+  .skills-block {
+    gap: 6rem;
+  }
+}
+
 .skill-1 {
   background-color: #e3f2fd;
 }
@@ -237,11 +288,16 @@ body {
 }
 
 /* ShowReel Block */
-.show-reel-block video {
+.show-reel-video {
   width: 100%;
-  max-width: 800px;
-  height: auto;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
   border-radius: 8px;
+}
+
+.show-reel-block h2 {
+  text-align: center;
+  font-size: 2rem;
 }
 
 /* Get In Touch */

@@ -14,7 +14,7 @@ const Home: React.FC = () => {
       <Description />
       <Skills />
       <ShowReel />
-      <Projects />
+      {/* <Projects /> */}
       <MusicSamples />
       <div className="get-in-touch">
         <Link to="/contact">Get in touch</Link>
