@@ -109,11 +109,11 @@ body {
 }
 
 .hero-parallax-image {
-  background-image: url("../src/assets/cranes.jpg");
+  background-image: url("../src/assets/oblaka.png");
   height: 100%;
   width: 100%;
   background-attachment: fixed;
-  background-position: 60% 100%;
+  background-position: 0% 80%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -168,8 +168,10 @@ body {
   display: flex;
   gap: 40px;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding-bottom: 0;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 .description-image {
   flex: 1;
@@ -214,6 +216,10 @@ body {
   text-align: center;
   font-size: 2rem;
   margin-top: 0;
+}
+
+.skills-block-wrapper {
+  border-top: 1px solid #ccc;
 }
 
 .skill {
@@ -309,15 +315,18 @@ body {
 
 .show-reel-block {
   border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   /* padding-top: 0; */
 }
 
 /* ShowReel Block */
 .show-reel-video {
-  width: 100%;
+  width: 90%;
+  display: block;
   margin: 0 auto;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 160 / 67;
   border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 .show-reel-block h2 {

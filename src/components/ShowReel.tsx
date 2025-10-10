@@ -1,12 +1,13 @@
 import React from "react";
+// import showReelVideo from "../assets/showreel.mp4";
 
 const ShowReel: React.FC = () => {
   return (
     <section className="block show-reel-block container">
-      <h2>Show Reel</h2>
+      <h2>Showreel</h2>
       {/* In a real project, you'd import the video file */}
       <video controls className="show-reel-video">
-        <source src="path/to/your/video.mp4" type="video/mp4" />
+        <source src={".."} type="video/mp4" />
         Your browser does not suppo rt the video tag.
       </video>
     </section>
