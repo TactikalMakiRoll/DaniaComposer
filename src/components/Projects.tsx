@@ -28,49 +28,40 @@ const Projects: React.FC = () => {
   return (
     <section className="block projects-block container">
       <h2>Projects</h2>
-      <Carousel
-        swipeable={false}
-        draggable={false}
-        showDots={true}
-        responsive={responsive}
-        infinite={false}
-        autoPlay={false}
-        customTransition="transform 300ms ease-in-out"
-        transitionDuration={500}
-        containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile"]}
-        dotListClass="carousel-dots"
-        itemClass="carousel-item"
-      >
-        <div>
-          <img
-            className="carousel-image"
-            src={farlanders}
-            alt="Farlanders project"
-          />
+      <div className="projects">
+        {/* The image source is now passed as a URL string to the CSS variable --bg-img */}
+        <div
+          className="project-item"
+          style={{ "--bg-img": `url(${farlanders})` } as React.CSSProperties}
+        >
+          {/* Content for Farlanders project (e.g., title, description) */}
         </div>
-        <div>
-          <img
-            className="carousel-image"
-            src={leoniDiSicilia}
-            alt="I Leoni di Sicilia project"
-          />
+
+        <div
+          className="project-item"
+          style={
+            { "--bg-img": `url(${leoniDiSicilia})` } as React.CSSProperties
+          }
+        >
+          {/* Content for I Leoni di Sicilia project */}
         </div>
-        <div>
-          <img
-            className="carousel-image"
-            src={superLocoWorld}
-            alt="Super Loco World project"
-          />
+
+        <div
+          className="project-item"
+          style={
+            { "--bg-img": `url(${superLocoWorld})` } as React.CSSProperties
+          }
+        >
+          {/* Content for Super Loco World project */}
         </div>
-        <div>
-          <img
-            className="carousel-image"
-            src={hollowHome}
-            alt="Hollow Home project"
-          />
+
+        <div
+          className="project-item"
+          style={{ "--bg-img": `url(${hollowHome})` } as React.CSSProperties}
+        >
+          {/* Content for Hollow Home project */}
         </div>
-      </Carousel>
+      </div>
     </section>
   );
 };

@@ -279,38 +279,36 @@ body {
   height: 50px; /* Set a fixed height for the icon */
 }
 
-/* Projects */
-.carousel-container {
-  max-width: 1980px;
+.projects-block {
+  text-align: center;
+}
+
+.projects {
+  width: 90%;
   margin: 0 auto;
-  /* height: 200px; */
-  /* column-gap: 2em; */
-  /* overflow: visible; */
-  height: 600px;
+  display: flex; /* Or whatever layout you need */
+  gap: 40px; /* Space between projects */
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.carousel-item {
-  /* padding-right: 10px; */
-  /* padding-right: 5px; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.carousel-item :last-child {
-  /* padding-right: 10px; */
-  /* padding-right: 5px; */
-}
+.project-item {
+  /* 1. Set the height for the block since it no longer has an <img> */
+  aspect-ratio: 1 / 1;
+  /* 2. Make them equally sized (Optional, but common in carousels/grids) */
+  flex: 1;
 
-.carousel-image {
-  max-width: calc(100% - 1rem);
-  max-height: calc(100% - 1rem);
-  /* width: 90%; */
-  height: auto;
-  object-fit: cover;
-}
+  /* 3. Use the CSS variable to set the background image */
+  background-image: var(--bg-img), linear-gradient(to bottom, #333, #555);
 
-.carousel-dots {
-  margin-top: 10px;
+  /* 4. Background styling to make it look like a background */
+  background-size: contain; /* Ensures the image covers the entire block */
+  background-position: center; /* Centers the image within the block */
+  background-repeat: no-repeat; /* Prevents image tiling */
+
+  /* Optional: Add some styling for visibility or interaction */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .show-reel-block {
@@ -344,4 +342,8 @@ body {
   font-size: 1.2rem;
   color: #007bff;
   text-decoration: none;
+}
+
+.music-samples-block {
+  border-top: 1px solid #ddd;
 }

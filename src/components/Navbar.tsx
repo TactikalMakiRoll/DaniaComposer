@@ -9,9 +9,6 @@ const Navbar: React.FC = () => {
           <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/projects">Projects</NavLink>
-        </li>
-        <li>
           <NavLink to="/albums">Albums</NavLink>
         </li>
         <li>
