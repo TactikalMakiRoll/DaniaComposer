@@ -17,7 +17,10 @@ const Projects: React.FC = () => {
           className="project-item"
           style={{ "--bg-img": `url(${farlanders})` } as React.CSSProperties}
         >
-          {/* Content for Farlanders project (e.g., title, description) */}
+          <div className="project-overlay">
+            <p className="project-title">Original Soundtrack</p>
+            <button className="listen-button">Listen</button>
+          </div>
         </div>
 
         <div
@@ -26,7 +29,10 @@ const Projects: React.FC = () => {
             { "--bg-img": `url(${leoniDiSicilia})` } as React.CSSProperties
           }
         >
-          {/* Content for I Leoni di Sicilia project */}
+          <div className="project-overlay">
+            <p className="project-title">Music License</p>
+            <button className="listen-button">Listen</button>
+          </div>
         </div>
 
         <div
@@ -35,14 +41,20 @@ const Projects: React.FC = () => {
             { "--bg-img": `url(${superLocoWorld})` } as React.CSSProperties
           }
         >
-          {/* Content for Super Loco World project */}
+          <div className="project-overlay">
+            <p className="project-title">Original Soundtrack</p>
+            <button className="listen-button">Listen</button>
+          </div>
         </div>
 
         <div
           className="project-item"
           style={{ "--bg-img": `url(${hollowHome})` } as React.CSSProperties}
         >
-          {/* Content for Hollow Home project */}
+          <div className="project-overlay">
+            <p className="project-title">Original Soundtrack</p>
+            <button className="listen-button">Listen</button>
+          </div>
         </div>
       </div>
     </section>

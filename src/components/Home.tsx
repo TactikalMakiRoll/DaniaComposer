@@ -16,8 +16,10 @@ const Home: React.FC = () => {
       <ShowReel />
       <Projects />
       <MusicSamples />
-      <div className="get-in-touch">
-        <Link to="/contact">Get in touch</Link>
+      <div className="getInTouchParent">
+        <div className="get-in-touch">
+          <Link to="/contact">Get in touch</Link>
+        </div>
       </div>
     </>
   );
