@@ -19,7 +19,14 @@ const Projects: React.FC = () => {
         >
           <div className="project-overlay">
             <p className="project-title">Original Soundtrack</p>
-            <button className="listen-button">Listen</button>
+            <a
+              href="https://www.youtube.com/watch?v=4R-wTPoTWj8&ab_channel=I-Human"
+              className="listen-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Listen
+            </a>
           </div>
         </div>
 
@@ -31,7 +38,14 @@ const Projects: React.FC = () => {
         >
           <div className="project-overlay">
             <p className="project-title">Music License</p>
-            <button className="listen-button">Listen</button>
+            <a
+              href="https://open.spotify.com/playlist/0Rldwy00cnV3EAJ9dGr3Om"
+              className="listen-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Listen
+            </a>
           </div>
         </div>
 
@@ -43,7 +57,14 @@ const Projects: React.FC = () => {
         >
           <div className="project-overlay">
             <p className="project-title">Original Soundtrack</p>
-            <button className="listen-button">Listen</button>
+            <a
+              href="https://www.youtube.com/watch?v=kWbY1juYWDo&ab_channel=I-Human"
+              className="listen-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Listen
+            </a>
           </div>
         </div>
 
@@ -53,7 +74,14 @@ const Projects: React.FC = () => {
         >
           <div className="project-overlay">
             <p className="project-title">Original Soundtrack</p>
-            <button className="listen-button">Listen</button>
+            <a
+              href="https://www.youtube.com/watch?v=ZkN7p1Ih18o"
+              className="listen-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Listen
+            </a>
           </div>
         </div>
       </div>
