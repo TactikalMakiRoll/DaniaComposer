@@ -239,6 +239,10 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   min-height: 150px;
   padding: 2rem 0.5rem;
+  color: white;
+}
+.skill img {
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -265,13 +269,19 @@ body {
 }
 
 .skill-1 {
-  background-color: #e3f2fd;
+  background: url("assets/1stbg.png");
+  background-size: cover;
+  background-position: center;
 }
 .skill-2 {
-  background-color: #e8f5e9;
+  background: url("assets/2ndbg.png");
+  background-size: cover;
+  background-position: center;
 }
 .skill-3 {
-  background-color: #fff3e0;
+  background: url("assets/3rdbg.png");
+  background-size: cover;
+  background-position: center;
 }
 .skill .icon {
   font-size: 48px; /* Adjust if using an icon font */
