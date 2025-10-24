@@ -170,16 +170,18 @@ body {
 /* Description Block */
 .description-block {
   display: flex;
-  gap: 40px;
   align-items: center;
   font-size: 1.3rem;
   padding-bottom: 0;
   margin-bottom: 2rem;
   margin-top: 1rem;
+  border-top: 1px solid #ccc;
+  padding-top: 2rem;
 }
 .description-image {
-  flex: 1;
-  max-width: 50%;
+  flex-basis: 50%;
+  padding-right: 40px;
+  box-sizing: border-box;
   border-right: 1px #333 solid;
 }
 .description-image img {
@@ -192,19 +194,29 @@ body {
   transform: rotateY(0deg);
 }
 
+.description-text {
+  flex-basis: 50%;
+  text-align: left;
+  padding-left: 40px;
+  box-sizing: border-box;
+  padding-right: 258.5px;
+  border-left: 1px #333 solid;
+  position: relative;
+  left: -1px;
+}
+
 @media screen and (max-width: 1600px) {
   .description-image img {
     height: 450px;
+  }
+  .description-text {
+    padding-right: 98.25px;
   }
 }
 
 /* .description-image:hover img {
   transform: rotateY(180deg);
 } */
-.description-text {
-  flex: 1;
-  text-align: left;
-}
 
 /* Skills Block */
 .skills-block {
@@ -288,11 +300,18 @@ body {
   margin-bottom: 15px;
   display: flex;
   align-items: center;
+  filter: invert(1);
+  fill: currentColor; /* Make the SVG paths inherit the text color */
   justify-content: center;
 }
 
 .skill .icon img {
   height: 5rem; /* Set a fixed height for the icon */
+}
+
+#icon3 {
+  position: relative;
+  bottom: -10px;
 }
 
 .projects-block {
@@ -663,6 +682,114 @@ body {
 
 h2 {
   font-family: "Bitter", serif;
+}
+
+/* Contact Form */
+#contact {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: left;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Important for flex items */
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+  color: black;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #810270;
+  box-shadow: 0 0 5px rgba(129, 2, 112, 0.3);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #53034f;
+}
+
+.contact-info {
+  margin-top: 40px;
+}
+
+.social-links-contact {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-links-contact img {
+  height: 2rem;
+  filter: invert(15%);
+  transition: filter 0.3s;
+}
+
+.social-links-contact a:hover img {
+  filter: invert(10%) sepia(80%) saturate(3000%) hue-rotate(280deg)
+    brightness(90%) contrast(100%);
 }
 
 /* font-family: "Bitter", serif; */

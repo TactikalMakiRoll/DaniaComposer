@@ -22,7 +22,11 @@ const Skills: React.FC = () => {
         </div>
         <div className="skill skill-3">
           <div className="icon">
-            <img src={consoleIcon} alt="Interactive Music Design Icon" />
+            <img
+              src={consoleIcon}
+              alt="Interactive Music Design Icon"
+              id="icon3"
+            />
           </div>
           <p> Interactive Music Design for Gameplay & Narrative</p>
         </div>
