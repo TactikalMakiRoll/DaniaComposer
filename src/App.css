@@ -109,6 +109,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family: "Noticia Text", serif;
   width: 100%;
 }
 
@@ -703,7 +704,7 @@ h2 {
   margin-bottom: 40px;
 }
 
-.contact-form {
+.gform {
   max-width: 800px;
   margin: 0 auto 40px;
   text-align: left;
@@ -793,3 +794,4 @@ h2 {
 }
 
 /* font-family: "Bitter", serif; */
+/* font-family: "Noticia Text", serif; */

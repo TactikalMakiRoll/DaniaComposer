@@ -9,7 +9,11 @@ const Contact: React.FC = () => {
       <p className="contact-subtitle">
         Have a project in mind or just want to say hello?
       </p>
-      <form className="contact-form">
+      <form
+        className="gform"
+        action="https://script.google.com/macros/s/AKfycbzatEg_bjwkD1j0FMC_AnKtRTf797rzzmgtZM7f1wIapc7spXvs4-Yqrz6fiDWTSnix0w/exec"
+        method="POST"
+      >
         <div className="form-row">
           <div className="form-group">
             <label htmlFor="name">Name</label>
