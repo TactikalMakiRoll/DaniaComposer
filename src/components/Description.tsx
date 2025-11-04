@@ -26,6 +26,15 @@ const Description: React.FC = () => {
           creating it. For me, it’s neither a profession nor a hobby, but a way
           of living and seeing the world — an essential part of who I am.
         </p>
+        <div className="resume-button-container">
+          <a
+            href="/Danylo_Dunets_Resume.pdf"
+            download
+            className="resume-button"
+          >
+            Download Resume
+          </a>
+        </div>
       </div>
     </section>
   );

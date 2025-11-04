@@ -109,7 +109,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Noticia Text", serif;
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-style: normal;
   width: 100%;
 }
 
@@ -214,6 +216,48 @@ body {
     padding-right: 98.25px;
   }
 }
+
+.resume-button-container {
+  margin-top: 2rem;
+}
+
+.resume-button {
+  /* Layout and Sizing */
+  display: inline-block;
+  padding-top: 0.35em;
+  padding-left: 0;
+
+  /* Appearance */
+  background-color: transparent; /* A vibrant blue */
+  color: black;
+  border: none;
+  border-radius: 25px; /* Pill shape */
+  /* box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3); Soft glow */
+
+  /* Typography */
+  font-family: inherit;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: underline;
+
+  font-family: "Wix Madefor Display", sans-serif;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 0.1rem;
+  /* Interaction */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* .resume-button:hover,
+.resume-button:focus {
+  background-color: #0056b3; 
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
+  outline: none;
+} */
 
 /* .description-image:hover img {
   transform: rotateY(180deg);
