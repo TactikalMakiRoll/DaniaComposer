@@ -13,20 +13,24 @@ const Hero: React.FC = () => {
       </div>
       <div className="social-links">
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/danylo-dunets-a8ab031b9/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img src={linkedInIcon} alt="LinkedIn" />
         </a>
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/ihuman.official/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img src={instagramIcon} alt="Instagram" />
         </a>
-        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.youtube.com/@IHumanOfficial"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img id="youtube-icon" src={youtubeIcon} alt="YouTube" />
         </a>
       </div>

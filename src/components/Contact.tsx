@@ -42,14 +42,14 @@ const Contact: React.FC = () => {
         </p>
         <div className="social-links-contact">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/danylo-dunets-a8ab031b9/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={linkedInIcon} alt="LinkedIn" />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/ihuman.official/"
             target="_blank"
             rel="noopener noreferrer"
           >
