@@ -57,7 +57,6 @@ const AudioPlayer = () => {
       ]}
     >
       {({
-        loading,
         trackIndex,
         playlist,
         playing,
