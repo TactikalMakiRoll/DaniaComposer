@@ -13,7 +13,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/DaniaComposer" element={<Home />} />
+            {/* <Route path="/DaniaComposer" element={<Home />} /> */}
             <Route path="/albums" element={<Albums />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
