@@ -29,7 +29,6 @@ const TrackItem: React.FC<TrackItemProps> = ({
   onTrackClick,
   togglePlay,
   currentTime,
-  duration,
 }) => {
   const handleTrackClick = () => {
     if (isCurrentTrack) {
