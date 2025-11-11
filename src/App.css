@@ -361,6 +361,7 @@ body {
 
 .projects-block {
   text-align: center;
+  border-bottom: 1px solid #ccc;
 }
 
 .projects-block h2 {
@@ -540,7 +541,8 @@ body {
 
 .getInTouchParent {
   text-align: center;
-  margin: 2rem auto;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .get-in-touch {
@@ -548,6 +550,9 @@ body {
   color: white;
   font-size: 13px;
   padding: 0.75rem 2.5rem;
+
+  font-family: "Wix Madefor Display", sans-serif;
+  font-size: 1.1rem;
 }
 
 .get-in-touch:hover {
@@ -560,8 +565,9 @@ body {
   text-decoration: none; /* Ensure link itself has no underline */
 }
 
-.music-samples-block {
-  border-top: 1px solid #ddd;
+.music-samples-block h2 {
+  margin-top: 0;
+  text-align: center;
 }
 
 .albums-container .albums {
@@ -857,6 +863,8 @@ h2 {
   color: #333;
   padding: 0.1rem 0.25rem;
   /* height: 2rem; */
+  position: relative;
+  bottom: 0.1rem;
 }
 .player-button:hover {
   background-color: #e9ecef;
@@ -870,8 +878,11 @@ h2 {
   width: 1.5rem;
   height: 1.5rem;
   position: relative;
-  top: 0.4rem;
+  top: 0.2rem;
 }
+/* #volume {
+  top: 0.1rem;
+} */
 
 .player-button-main {
   background-color: #333;
@@ -894,15 +905,29 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: start;
+  font-size: 1.1em;
+  font-family: "Wix Madefor Display", sans-serif;
 }
 
 .player-track-name p {
   margin: 0;
 }
 
+.player-track-name p:first-child {
+  font-weight: bold;
+}
+.player-track-time {
+  /* letter-spacing: 2px; */
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
 .player-volume {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  right: 6px;
+  top: 1px;
 }
 
 .player-button-main:hover {
@@ -972,15 +997,104 @@ h2 {
 }
 
 .player-volume-slider {
-  width: 150px;
+  width: 110px;
+  position: relative;
+  bottom: 0.25rem;
 }
 
-.music-player-container {
+.music-samples-block {
   width: 90%;
+  text-align: center;
   margin: 0 auto;
 }
 
-.player-icon {
+.music-samples-block h2 {
+  margin-top: 1rem;
+}
+
+.music-player-container {
+  max-width: calc(50% - 60px);
+  margin: 0 auto;
+}
+
+.player-control-icon {
   position: relative;
-  bottom: 0.25rem;
+  left: 2px;
+  top: 3px;
+  transform: scale(1.1);
+}
+
+.player-control-icon2 {
+  position: relative;
+  top: 3px;
+  transform: scale(0.9);
+}
+
+.visualizer-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  column-gap: 0.25rem; /* 4px */
+  height: 4.75rem;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.visualizer-bar {
+  width: 0.875rem; /* 6px */
+  min-height: 0.625rem; /* 10px */
+  background-color: black;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+.visualizer-container {
+  padding: 1rem 0;
+}
+
+.play {
+  border: 1px solid #696969;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.playlist-track {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.playlist-track:hover {
+  background-color: #e9ecef;
+}
+
+.playlist-track.current-track {
+  background-color: #e0e0e0;
+}
+
+.track-control-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.track-name {
+  flex-grow: 1;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-weight: bold;
+}
+.track-duration {
+  margin-left: auto;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+.player-icon-play {
+  position: relative;
+  left: 1px;
 }
