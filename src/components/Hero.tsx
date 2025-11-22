@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
     <section className="block hero">
       <div className="hero-parallax-image"></div>
       <div className="hero-content">
-        <h1>Music for Games, Film & Interactive Media</h1>
+        <h1>Music for Games, Films & Interactive Media</h1>
       </div>
       <div className="social-links">
         <a

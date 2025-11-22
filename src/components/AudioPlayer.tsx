@@ -83,7 +83,7 @@ const AudioPlayer = () => {
         {
           id: 5,
           src: hollowHomeShatteredPast,
-          name: "Hollow Home Shattered Past",
+          name: "Shattered Past (Hollow Home OST)",
           duration: 254,
         },
         { id: 6, src: gravity, name: "Gravity", duration: 153 },
