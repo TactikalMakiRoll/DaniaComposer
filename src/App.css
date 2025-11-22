@@ -1255,6 +1255,7 @@ h2 {
   .albums {
     grid-template-columns: repeat(2, 1fr);
     /* width: 80%; */
+    gap: 20px;
   }
   .music-player-container {
     max-width: calc(100% - 80px);
@@ -1263,8 +1264,9 @@ h2 {
 
 @media (max-width: 600px) {
   .albums {
-    grid-template-columns: repeat(1, 1fr);
-    width: 80%;
+    grid-template-columns: repeat(2, 1fr);
+    /* width: 80%; */
+    gap: 10px;
   }
 
   .player-container {
@@ -1272,5 +1274,10 @@ h2 {
     grid-template-rows: repeat(3, 1fr);
     place-items: center;
     gap: 5px;
+  }
+
+  .player-track-name {
+    align-items: center;
+    margin-bottom: 5px;
   }
 }
