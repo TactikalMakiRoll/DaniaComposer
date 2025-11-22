@@ -113,7 +113,12 @@ const Albums: React.FC = () => {
             style={{ "--bg-img": `url(${album.image})` } as React.CSSProperties}
           >
             <div className="album-overlay">
-              <p className="album-title">{album.title}</p>
+              <p
+                className="album-title"
+                id={index == 2 ? "guardiansAlbum" : undefined}
+              >
+                {album.title}
+              </p>
               <a
                 href={album.spotifyUrl}
                 className="listen-button"
